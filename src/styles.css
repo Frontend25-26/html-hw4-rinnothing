@@ -1,0 +1,75 @@
+body {
+    width: 100%;
+    font-family: 'Montserrat', system-ui, sans-serif;
+    background-color: gray;
+}
+
+.grid-wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+article.css3-card {
+    display: inline-block;
+
+    background-color: rgb(112, 109, 109);
+
+    margin: 5px;
+    padding-left: 5px;
+    padding-right: 5px;
+    border: black 3px solid;
+    border-radius: 7px;
+    border-top-right-radius: 30px;;
+    
+    h1 {
+        text-align: center;
+        font-weight: bold;
+
+        font-size: 20px;
+    }
+
+    img {
+        border: 2px black solid;
+    }
+
+    h2 {
+        text-decoration: underline 2px darkgray;
+    }
+
+    .signature {
+        font-weight: bold;
+    }
+
+    :is(.like, .stroke) {
+        margin-top: 2px;
+        border: black 2px solid;
+        border-radius: 3px;
+        padding: 10px;
+
+        vertical-align: top;
+
+        .hide {
+            display: block;
+            max-height: 0;
+            overflow: hidden;
+
+            transition: max-height 0.3s ease;
+        }
+        &:hover .hide {
+            max-width: auto;
+            max-height: 1lh;
+        }
+    }
+
+    .like:hover {
+        background-color: red;
+    }
+
+    .stroke:hover {
+        background-color: yellow;
+    }
+
+    p {
+        line-height: 1.2;
+    }
+}
