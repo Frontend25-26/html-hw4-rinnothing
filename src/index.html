@@ -6,6 +6,7 @@
     <title>HW4 - Три кота</title>
 
     <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="styles-scss.css">
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -31,16 +32,16 @@
         </article>
 
         
-        <article class="border-3 rounded-md rounded-tr-4xl m-1 px-1 bg-gray-500">
+        <article class="border-3 rounded-md rounded-tr-4xl m-1 px-1 bg-amber-200">
             <h1 class="font-bold text-xl text-center">TailwindCSS</h1>
 
             <img src="img/matroskin.jpg" alt="Кот Матроскин" class="border-2">
             
-            <h2 class="underline"><span class="font-bold">Имя:</span> Матроскин</h2>
-            <h2 class="underline"><span class="font-bold">Возраст:</span> 8 лет</h2>
+            <h2 class="underline decoration-2"><span class="font-bold">Имя:</span> Матроскин</h2>
+            <h2 class="underline decoration-2"><span class="font-bold">Возраст:</span> 8 лет</h2>
 
-            <button class="group border-2 rounded-sm p-2.5 align-top hover:bg-red-500">👍 <span class="block max-h-0 overflow-hidden group-hover:max-h-full">- лайкнуть</span></button>
-            <button class="group border-2 rounded-sm p-2.5 align-top hover:bg-yellow-500">🫳 <span class="block max-h-0 overflow-hidden group-hover:max-h-full">- погладить</span></button>
+            <button class="group border-2 rounded-sm p-2.5 align-top bg-amber-800 hover:bg-red-500">👍 <span class="block max-h-0 overflow-hidden ease-linears transition-[max-height] duration-300 group-hover:max-h-6">- лайкнуть</span></button>
+            <button class="group border-2 rounded-sm p-2.5 align-top bg-amber-800 hover:bg-yellow-500">🫳 <span class="block max-h-0 overflow-hidden ease-linears transition-[max-height] duration-300 group-hover:max-h-6">- погладить</span></button>
 
             <p class="leading-tight">
                 Матроскин — кот из мультфильма "Трое из Простоквашино" Эдуарда Успенского, хозяйственный и практичный, носит тельняшку. 

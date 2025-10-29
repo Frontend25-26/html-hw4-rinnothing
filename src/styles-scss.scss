@@ -1,0 +1,76 @@
+$bg-color: rgb(176, 160, 94);
+$btn-passive-clr: rgb(136, 92, 22);
+$btn-active-like-clr: rgb(178, 34, 34);
+$btn-active-stroke-clr: rgb(202, 141, 20);
+
+@mixin bb($size) {
+    border: black $size solid;    
+}
+
+article.scss-card {
+    background-color: $bg-color;
+    margin: 5px;
+    padding-left: 5px;
+    padding-right: 5px;
+
+    @include bb(3px);
+    border-radius: 7px;
+    border-top-right-radius: 30px;
+
+    .signature {
+        font-weight: bold;
+    }
+
+    h1 {
+        @extend .signature;
+        text-align: center;
+        font-size: 20px;
+    }
+
+    img {
+        @include bb(2px);    
+    }
+
+    h2 {
+        text-decoration: underline 2px;
+    }
+    
+    @mixin button($clr) {
+        margin-top: 2px;
+        @include bb(2px);
+        border-radius: 3px;
+        padding: 10px;
+
+        vertical-align: top;
+        background-color: $btn-passive-clr;
+
+        .hide {
+            display: block;
+            max-height: 0;
+            overflow: hidden;
+
+            transition: max-height 0.3s ease;
+        }
+        &:hover {
+            background-color: $clr;
+
+            .hide {
+                max-width: auto;
+                max-height: 1lh;
+            }   
+        }
+    }
+
+    .like {
+        @include button($btn-active-like-clr);
+    }
+
+    .stroke {
+        @include button($btn-active-stroke-clr);
+    }
+
+    p {
+        line-height: 1.2;
+    }
+}
+    
