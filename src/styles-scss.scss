@@ -44,7 +44,7 @@ article.scss-card {
         vertical-align: top;
         background-color: $btn-passive-clr;
 
-        .hide {
+        .sr-only {
             display: block;
             max-height: 0;
             overflow: hidden;
@@ -54,7 +54,7 @@ article.scss-card {
         &:hover {
             background-color: $clr;
 
-            .hide {
+            .sr-only {
                 max-width: auto;
                 max-height: 1lh;
             }   

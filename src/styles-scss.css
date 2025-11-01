@@ -28,7 +28,7 @@ article.scss-card .like {
   vertical-align: top;
   background-color: rgb(136, 92, 22);
 }
-article.scss-card .like .hide {
+article.scss-card .like .sr-only {
   display: block;
   max-height: 0;
   overflow: hidden;
@@ -37,7 +37,7 @@ article.scss-card .like .hide {
 article.scss-card .like:hover {
   background-color: rgb(178, 34, 34);
 }
-article.scss-card .like:hover .hide {
+article.scss-card .like:hover .sr-only {
   max-width: auto;
   max-height: 1lh;
 }
@@ -49,7 +49,7 @@ article.scss-card .stroke {
   vertical-align: top;
   background-color: rgb(136, 92, 22);
 }
-article.scss-card .stroke .hide {
+article.scss-card .stroke .sr-only {
   display: block;
   max-height: 0;
   overflow: hidden;
@@ -58,7 +58,7 @@ article.scss-card .stroke .hide {
 article.scss-card .stroke:hover {
   background-color: rgb(202, 141, 20);
 }
-article.scss-card .stroke:hover .hide {
+article.scss-card .stroke:hover .sr-only {
   max-width: auto;
   max-height: 1lh;
 }

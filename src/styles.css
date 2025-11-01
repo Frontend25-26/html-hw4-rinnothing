@@ -49,14 +49,14 @@ article.css3-card {
         vertical-align: top;
         background-color: rgb(136, 92, 22);
 
-        .hide {
+        .sr-only {
             display: block;
             max-height: 0;
             overflow: hidden;
 
             transition: max-height 0.3s ease;
         }
-        &:hover .hide {
+        &:hover .sr-only {
             max-width: auto;
             max-height: 1lh;
         }
