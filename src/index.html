@@ -4,8 +4,68 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>HW4 - Три кота</title>
+
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="styles-scss.css">
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
 </head>
 <body>
+    <div class="grid-wrapper">
+        <article class="css3-card">
+            <h1>CSS3</h1>
 
+            <img src="img/begemot.webp" alt="Кот Бегемот">
+            
+            <h2><span class="signature">Имя:</span> Бегемот</h2>
+            <h2><span class="signature">Возраст:</span> ♾️</h2>
+
+            <button type="button" aria-pressed="false" class="like">👍 <span class="hide">лайкнуть</span></button>
+            <button type="button" aria-pressed="false" class="stroke">🫳 <span class="hide">погладить</span></button>
+
+            <p>
+                Кот Бегемот — огромный черный кот-оборотень из свиты Воланда в романе "Мастер и Маргарита" Михаила Булгакова, способный принимать человеческий облик. 
+                Он любит пистолеты, шахматы, коньяк и устраивает хаос в Москве.
+            </p>
+        </article>
+
+        
+        <article class="border-3 rounded-md rounded-tr-4xl m-1 px-1 bg-[rgb(176,160,94)]">
+            <h1 class="font-bold text-xl text-center">TailwindCSS</h1>
+
+            <img src="img/matroskin.jpg" alt="Кот Матроскин" class="border-2">
+            
+            <h2 class="underline decoration-2"><span class="font-bold">Имя:</span> Матроскин</h2>
+            <h2 class="underline decoration-2"><span class="font-bold">Возраст:</span> 8 лет</h2>
+
+            <button type="button" aria-pressed="false" class="group border-2 rounded-sm p-2.5 align-top bg-[rgb(136,92,22)] hover:bg-[rgb(178,34,34)]">👍 <span class="block max-h-0 overflow-hidden ease-linears transition-[max-height] duration-300 group-hover:max-h-6">лайкнуть</span></button>
+            <button type="button" aria-pressed="false" class="group border-2 rounded-sm p-2.5 align-top bg-[rgb(136,92,22)] hover:bg-[rgb(202,141,20)]">🫳 <span class="block max-h-0 overflow-hidden ease-linears transition-[max-height] duration-300 group-hover:max-h-6">погладить</span></button>
+
+            <p class="leading-tight">
+                Матроскин — кот из мультфильма "Трое из Простоквашино" Эдуарда Успенского, хозяйственный и практичный, носит тельняшку. 
+                Он друг дяди Фёдора и Шарика, занимается фермой, коровой и фотографией.
+            </p>
+        </article>
+
+        
+        <article class="scss-card">
+            <h1>SCSS</h1>
+
+            <img src="img/v_sapogah.jpg" alt="Кот в сапогах">
+            
+            <h2><span class="signature">Имя:</span> Кот в сапогах</h2>
+            <h2><span class="signature">Возраст:</span> 5 лет</h2>
+
+            <button type="button" aria-pressed="false" class="like">👍 <span class="hide">лайкнуть</span></button>
+            <button type="button" aria-pressed="false" class="stroke">🫳 <span class="hide">погладить</span></button>
+
+            <p>
+                Кот в сапогах — хитрый и умный кот из сказки Шарля Перро, наследство младшего сына мельника. 
+                С помощью сапог, шляпы и мешка он обманывает людоеда, помогает хозяину жениться на принцессе и стать маркизом Карабасом.
+            </p>
+        </article>
+    </div>
 </body>
 </html>
